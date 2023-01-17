@@ -1,12 +1,12 @@
 # Apply label "feature" if head matches "feature/*"
-Feature:
+feature:
   head: "feature/*"
 
 # Apply label "feature" if head matches "improvement/*"
-Improvement:
+improvement:
   head: "improvement/*"
  
 # Apply label "feature" if head matches "bug/*"
-Bug:
+bug:
   head: "bug/*"
  
