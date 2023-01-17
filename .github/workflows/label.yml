@@ -9,14 +9,11 @@ name: Labeler
 on: [pull_request]
 
 jobs:
-  label:
-
+  label_prs:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-
     steps:
-    - uses: actions/labeler@v4
+    - name: Label PRs
+      if: github.event.action == 'opened' # Only run the action when the PR was first opened
+      uses: ffittschen/pr-branch-labeler@v1
       with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
