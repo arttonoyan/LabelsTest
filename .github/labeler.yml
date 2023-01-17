@@ -1,11 +1,9 @@
-Feature:
- - branch: feature/*
- 
-Improvement:
- - branch: improvement/*
- 
-Bug:
- - branch: bug/*
- 
-Release:
- - branch: ['release/*', 'hotfix/**']
+version: 1
+labels:
+  - label: "Feature"
+    branch:
+      - "feature/.*"
+      
+  - label: "Bug"
+    branch:
+      - "bug/.*"
