@@ -1,11 +1,12 @@
+# Apply label "feature" if head matches "feature/*"
 Feature:
- - branch: feature/*
- 
+  head: "feature/*"
+
+# Apply label "feature" if head matches "improvement/*"
 Improvement:
- - branch: improvement/*
+  head: "improvement/*"
  
+# Apply label "feature" if head matches "bug/*"
 Bug:
- - branch: bug/*
+  head: "bug/*"
  
-Release:
- - branch: ['release/*', 'hotfix/**']
