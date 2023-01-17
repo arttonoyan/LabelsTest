@@ -1,0 +1,11 @@
+Feature:
+ - branch: feature/*
+ 
+Improvement:
+ - branch: improvement/*
+ 
+Bug:
+ - branch: bug/*
+ 
+Release:
+ - branch: ['release/*', 'hotfix/**']
